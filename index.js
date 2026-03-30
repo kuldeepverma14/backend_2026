@@ -3,6 +3,10 @@ import "dotenv/config"
 const app = express()
 const PORT = process.env.PORT
 
+app.get("/kddev",(req,res)=>{
+    res.send("kd dev")
+})
+
 app.get("/",(req,res)=>{
     res.send("<h1>Hello world</h1>")
 })
